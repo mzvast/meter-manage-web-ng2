@@ -16,11 +16,14 @@
       "mobile": false,
       "styles": [
         "../node_modules/bootstrap/dist/css/bootstrap.css",
+        "../node_modules/admin-lte/dist/css/AdminLTE.css",
+        "../node_modules/admin-lte/dist/css/skins/skin-red-light.css",
         "styles.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.js",
-        "../node_modules/bootstrap/dist/js/bootstrap.js"
+        "../node_modules/bootstrap/dist/js/bootstrap.js",
+        "../node_modules/admin-lte/dist/js/app.js"
       ],
       "environments": {
         "source": "environments/environment.ts",
