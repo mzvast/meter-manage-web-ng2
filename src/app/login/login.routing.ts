@@ -1,11 +1,10 @@
 import {Routes, RouterModule} from '@angular/router';
 
-import {ManageComponent} from './manage.component';
+import {LoginComponent} from './login.component';
 
 export const routes: Routes = [
-  {path: '', component: ManageComponent},
+  {path: '', component: LoginComponent},
 ];
 
 export const routing = RouterModule.forChild
 (routes);
-

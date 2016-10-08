@@ -18,8 +18,6 @@ import {ManageNg2RoutingModule} from './app-routing.module';
     FormsModule,
     HttpModule,
     CoreModule,
-    // ManageModule,
-    // ActionModule,
     ManageNg2RoutingModule
   ],
   providers: [],
