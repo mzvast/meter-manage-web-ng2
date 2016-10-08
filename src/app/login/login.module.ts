@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login.component';
 import {routing} from './login.routing';
 import {FormsModule} from '@angular/forms';
+import {LoginService} from './login.service';
 
 @NgModule({
   imports: [
@@ -11,6 +12,7 @@ import {FormsModule} from '@angular/forms';
 /*TODO:为什么FormsModule需要重复导入？*/
     routing
   ],
+  providers: [ LoginService],
   declarations: [LoginComponent]
 })
 export class LoginModule { }
