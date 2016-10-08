@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {User} from '../shared/user';
 
 @Component({
   selector: 'app-login',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+
+  model = new User('username', 'password');
+
+  constructor() {
+  }
+
+  onSubmit() {
+    console.log("登录中");
+  }
+  get diagnostic() { return JSON.stringify(this.model); }
 
   ngOnInit() {
   }
+
 
 }

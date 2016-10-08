@@ -5,14 +5,14 @@
     </div>
     <div class="login-box-body">
       <p class="login-box-msg">登录以继续</p>
-
-      <form>
+      {{ diagnostic }}
+      <form (ngSubmit) = "onSubmit()" #loginForm = "ngForm">
         <div class="form-group has-feedback">
-          <input type="email" class="form-control" placeholder="用户名">
-          <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+          <input type="text" class="form-control" placeholder="用户名" [(ngModel)]="model.name" name="name" required>
+          <span class="glyphicon glyphicon-user form-control-feedback"></span>
         </div>
         <div class="form-group has-feedback">
-          <input type="password" class="form-control" placeholder="密码">
+          <input type="password" class="form-control" placeholder="密码" [(ngModel)]="model.password" name="password" required>
           <span class="glyphicon glyphicon-lock form-control-feedback"></span>
         </div>
         <div class="row">
@@ -25,7 +25,7 @@
           </div>
           <!-- /.col -->
           <div class="col-xs-4">
-            <button type="submit" class="btn btn-primary btn-block btn-flat">登录</button>
+            <button type="submit" class="btn btn-primary btn-block btn-flat" [disabled]="!loginForm.form.valid">登录</button>
           </div>
           <!-- /.col -->
         </div>
