@@ -8,10 +8,12 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import {ManageNg2RoutingModule} from './app-routing.module';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
