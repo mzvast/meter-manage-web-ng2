@@ -1,12 +1,10 @@
-// import { ActionModule } from './action/action.module';
-// import { ManageModule } from './manage/manage.module';
-import { CoreModule } from './core/core.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { CoreModule } from './core/core.module';
 import {ManageNg2RoutingModule} from './app-routing.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 

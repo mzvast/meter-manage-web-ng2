@@ -1,5 +1,3 @@
-// import { ActionComponent } from './action/action.component';
-// import { ManageComponent } from './manage/manage.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';

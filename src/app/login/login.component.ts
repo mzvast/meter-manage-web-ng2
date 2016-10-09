@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {User} from '../shared/user';
-import {LoginService} from "./login.service";
+import {LoginService} from './login.service';
 
 @Component({
   selector: 'app-login',
@@ -16,7 +16,7 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit() {
-    this.loginService.doLogin(this.user);
+    this.loginService.login(this.user);
   }
   get diagnostic() { return JSON.stringify(this.user); }
 

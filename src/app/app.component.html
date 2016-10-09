@@ -2,9 +2,10 @@
   {{title}}
 </h1>
 <nav id="top">
-  <a [routerLink]="['/login']">login</a>
-  <a [routerLink]="['/dashboard']">dashboard</a>
-  <a [routerLink]="['/admin']">admin</a>
-  <a [routerLink]="['/action']">action</a>
+  <a *ngIf="!authService.isLoggedIn" [routerLink]="['/login']" routerLinkActive="active">login</a>
+  <a *ngIf="authService.isLoggedIn" href="" (click)="logout()">logout</a>
+  <a [routerLink]="['/dashboard']" routerLinkActive="active">dashboard</a>
+  <a [routerLink]="['/admin']" routerLinkActive="active">admin</a>
+  <a [routerLink]="['/action']" routerLinkActive="active">action</a>
 </nav>
 <router-outlet></router-outlet>
