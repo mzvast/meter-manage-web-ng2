@@ -9,7 +9,6 @@ import {LoginService} from './login.service';
   imports: [
     CommonModule,
     FormsModule,
-/*TODO:为什么FormsModule需要重复导入？*/
     routing
   ],
   providers: [ LoginService],

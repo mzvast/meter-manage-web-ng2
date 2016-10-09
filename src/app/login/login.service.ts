@@ -20,7 +20,7 @@ export class LoginService {
         // Get the redirect URL from our auth service
         // If no redirect has been set, use the default
         let savedUrl = this.authService.redirectUrl;
-        let redirect = savedUrl ? savedUrl : '/admin';
+        let redirect = savedUrl ? savedUrl : '/admin/dashboard';
         // Redirect the user
         this.router.navigate([redirect]);
       }

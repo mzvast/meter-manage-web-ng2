@@ -1,0 +1,21 @@
+<header class="main-header">
+        <!-- Logo -->
+        <!-- Logo -->
+        <a class="logo">
+          <!-- logo for regular state and mobile devices -->
+          <span class="logo-lg"><b>Admin</b>LTE</span>
+        </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top" role="navigation">
+
+          <!-- Navbar Right Menu -->
+          <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+              <li><a [routerLink]="['/dashboard']" routerLinkActive="active">主页</a>
+              <li><a *ngIf="!authService.isLoggedIn" [routerLink]="['/login']" routerLinkActive="active">登录</a>
+    </li>
+              <li><a *ngIf="authService.isLoggedIn" href="" (click)="logout()">注销</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
