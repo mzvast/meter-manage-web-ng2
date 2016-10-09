@@ -6,7 +6,7 @@ import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 
 
 const routes: Routes = [
-  // { path: '', pathMatch: 'full', redirectTo: 'admin' },
+  { path: '', pathMatch: 'full', redirectTo: 'dashboard' },
   { path: 'login', loadChildren: 'app/login/login.module#LoginModule' },
   { path: 'admin', loadChildren: 'app/admin/admin.module#AdminModule' },
   { path: 'dashboard', loadChildren: 'app/dashboard/dashboard.module#DashboardModule' },
